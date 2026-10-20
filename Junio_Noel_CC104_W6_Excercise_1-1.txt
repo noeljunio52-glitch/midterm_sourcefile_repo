@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('CAMPUS IT SUPPORT REQUEST MANAGER');
+console.log('CAMPUS IT SUPPORTS REQUEST MANAGER');
 
 class Stack {
   constructor() {
