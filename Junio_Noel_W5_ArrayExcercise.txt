@@ -1,6 +1,6 @@
 'use strict';
 
-console.log('STUDENT SCORE ARRAY ANALYZER');
+console.log('STUDENT SCORE ARRAY ANALYZERS');
 
 const studentNames = ['Ana', 'Ben', 'Carla', 'Daniel', 'Ella'];
 const studentScores = [85, 72, 91, 64, 78];
