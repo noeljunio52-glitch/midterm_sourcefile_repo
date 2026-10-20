@@ -1,0 +1,46 @@
+const scores = [85, 72, 91, 64, 78];
+let totalScore = 0;
+let passed = 0;
+let failed = 0;
+
+console.log(“Student Scores:”);
+for (let i = 0; i < scores.length; i++) {
+    console.log(scores[i]);
+}
+console.log(“”);
+
+for (let i = 0; i < scores.length; i++) {
+    const score = scores[i];
+    let interpretation = “”;
+
+    if (score >= 90 && score <= 100) {
+        interpretation = “Excellent”;
+    } else if (score >= 80 && score <= 89) {
+        interpretation = “Very Good”;
+    } else if (score >= 75 && score <= 79) {
+        interpretation = “Good”;
+    } else {
+        interpretation = “Failed”;
+    }
+
+    if (score >= 75) {
+        Console.log(`Student ${i + 1}: ${score} - ${interpretation} – Passed`);
+        passed++;
+    } else {
+        console.log(`Student ${i + 1}: ${score} - ${interpretation}`);
+        failed++;
+    }
+    totalScore += score;
+}
+
+const averageScore = totalScore / scores.length;
+const highestScore = Math.max(…scores);
+const lowestScore = Math.min(…scores);
+
+console.log(“”);
+console.log(`Total Score: ${totalScore}`);
+console.log(`Average Score: ${averageScore}`);
+console.log(`Highest Score: ${highestScore}`);
+console.log(`Lowest Score: ${lowestScore}`);
+console.log(`Passed: ${passed}`);
+console.log(`Failed: ${failed}`);
